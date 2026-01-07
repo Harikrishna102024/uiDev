@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'uiDev';
+  loading = true;
+
+  @ViewChild('menu', { static: true }) data!: ElementRef;
+
+  toggle() {
+    this.data.nativeElement.classList.toggle("open");
+  }
+
 }
