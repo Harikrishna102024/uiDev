@@ -1,5 +1,6 @@
 <div class="dropdown">
     <input 
+    class="inputBox"
     type="text" 
     placeholder="search...." 
     [(ngModel)]="searchText" 
@@ -8,4 +9,4 @@
     <ng-container *ngFor="let item of filter">
         <div class="dropdown-content" (click)="selectItem(item)">{{item}}</div>
     </ng-container>
-</div>
+</div>  
