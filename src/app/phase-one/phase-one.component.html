@@ -1,0 +1,111 @@
+<div class="main">
+    <!-- Types of CSS -->
+
+    <div class="content1">
+
+        <!-- Inline CSS -->
+        <div class="inlineCss" style="background-color: aqua; color: black; padding: 8px; border-radius: 10px;">i am
+            inline CSS</div>
+
+
+        <!-- Internal CSS -->
+        <style>
+            .internalCss {
+                background-color: rgb(85, 173, 173);
+                color: black;
+                padding: 8px;
+                border-radius: 10px;
+            }
+        </style>
+        <div class="internalCss">i am internal CSS</div>
+
+
+        <!-- External CSS -->
+        <div class="externalCss">i am External CSS</div>
+
+    </div>
+
+
+
+    <!-- CSS selectors -->
+
+    <div class="content2">
+        <div>
+            <!-- Element Selector -->
+            <p>I am element Selector</p>
+
+            <!-- Class Selector -->
+            <p class="classSelector">I am class Selector</p>
+
+            <!-- ID Selector -->
+            <p id="idSelector">I am id Selector</p>
+
+            <!-- Attribute Selector -->
+            <input type="text" placeholder="i am attribute selector please enter name">
+
+        </div>
+
+    </div>
+
+    <!-- CSS units -->
+    <!-- px -->
+    <div class="content3">
+        <div class="parent1">
+            i am parent 500px
+        </div>
+    </div>
+
+    <!-- % -->
+    <div class="content4">
+        <div class="parent2">
+            i am parent 50%
+            <div class="child2">
+                i am child 50%
+            </div>
+        </div>
+    </div>
+
+    <!-- em -->
+    <div class="content5">
+        <div class="parent3">
+            i am parent em
+            <div class="child3">
+                i am child em
+            </div>
+        </div>
+    </div>
+
+    <!-- rem -->
+    <div class="content6">
+        <div class="parent4">
+            i am parent rem
+        </div>
+    </div>
+
+    <button (click)="toggle()">Open Dropdown</button>
+
+    <div class="dropdown" #menu>
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+    </div>
+
+    <!-- Grid System -->
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Body</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <div *ngIf="loading" class="spinner"></div>
+
+
+    <div class="content7">
+        <div class="scssTesting">
+            ddd
+        </div>
+    </div>
+
+
+</div>

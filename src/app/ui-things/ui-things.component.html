@@ -1,0 +1,11 @@
+<div class="dropdown">
+    <input 
+    type="text" 
+    placeholder="search...." 
+    [(ngModel)]="searchText" 
+    (input)="filterData()"
+    >
+    <ng-container *ngFor="let item of filter">
+        <div class="dropdown-content" (click)="selectItem(item)">{{item}}</div>
+    </ng-container>
+</div>
